@@ -18,6 +18,7 @@ def first_challenge
     if k=="Freddy Mercury"
       v.each {|k2,v2|
       if k2 = :favorite_icecream_flavors
+        pry.binding
         v2.delete_if {|flavor| flavor=="strawberry"}
       end
       }
